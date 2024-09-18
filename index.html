@@ -6,8 +6,15 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
-      <!-- The floor and walls to create a corner -->
+    <a-scene fog="type: exponential; color: #AAA; density: 0.05" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
+      <a-assets>
+        <a-asset-item id="monstera1" src="assets/models/monstera.gltf"></a-asset-item>
+        <a-asset-item id="monstera2" src="assets/models/scene.gltf"></a-asset-item>
+        <img id="tile-texture" src="assets/models/textures/tile_pattern.jpg" />
+      </a-assets>
+
+      <a-sky color="#ECECEC"></a-sky>
+      <!--The floor and walls to create a corner -->
       <a-plane 
         position="-5 0 0" 
         rotation="0 90 0" 
@@ -44,8 +51,21 @@
         color="#7BC8A4" 
         shadow>
       </a-plane>
+      <a-box 
+        id="floor block"
+        position="0 -5.88359 0" 
+        width="10" 
+        height="2.310" 
+        depth="10" 
+        color="#ffffff" 
+        material="src: url(assets/models/textures/tile_pattern.jpg); 
+          repeat: 2 2; 
+          side: double; 
+          wrapS: repeat; 
+          wrapT: repeat;">
+      </a-box>
 
-      <!-- A sphere to simulate a light source -->
+      <!-- Light setup -->
       <a-light
         id="directionalLight"
         type="directional"
@@ -64,8 +84,9 @@
         type="ambient"
         intensity="0.4"
         color="#ffffff">
-      </a-light>
+      </a-light> 
 
+      
       <!-- TABLE COMPONENTS -->
 
       <!-- TABLE Top -->
@@ -79,7 +100,7 @@
         shadow="" 
         material="" 
         geometry="height: 0.55; 
-        depth: 7.16">
+          depth: 7.16">
       </a-box>
 
       <!-- TABLE Right -->
@@ -93,8 +114,8 @@
         shadow="" 
         material="" 
         geometry="width: 1.77; 
-        height: 3.04; 
-        depth: 0.47">
+          height: 3.04; 
+          depth: 0.47">
       </a-box>
 
       <!-- TABLE Left -->
@@ -108,8 +129,8 @@
         shadow="" 
         material="" 
         geometry="width: 1.77; 
-        height: 3.04; 
-        depth: 0.47">
+          height: 3.04; 
+          depth: 0.47">
       </a-box>
 
       <!-- Small Stool Components-->
@@ -119,8 +140,8 @@
         id="SmallStoolTop"
         position="-1.18 -3.19288 -1" 
         geometry="depth: 2.97; 
-        height: 0.35; 
-        width: 2.3" 
+          height: 0.35; 
+          width: 2.3" 
         material="color: #91511d">
       </a-box>
 
@@ -130,8 +151,8 @@
         position="-0.33803 -4.233 0.02443" 
         rotation="0.09 0 0" 
         geometry="depth: 0.36; 
-        height: 1.75; 
-        width: 0.48" 
+          height: 1.75; 
+          width: 0.48" 
         material="color: #91511d">
       </a-box>
 
@@ -141,8 +162,8 @@
         position="-0.367 -4.145 -2.191" 
         rotation="0.09 0 0" 
         geometry="depth: 0.36; 
-        height: 1.75; 
-        width: 0.48" 
+          height: 1.75; 
+          width: 0.48" 
         material="color: #91511d">
       </a-box>
 
@@ -152,8 +173,8 @@
         position="-1.89679 -4.2144 0.043" 
         rotation="0.09 0 0" 
         geometry="depth: 0.36; 
-        height: 1.75; 
-        width: 0.48" 
+          height: 1.75; 
+          width: 0.48" 
         material="color: #91511d">
       </a-box>
 
@@ -163,8 +184,8 @@
         position="-1.897 -4.145 -2.191" 
         rotation="0.09 0 0" 
         geometry="depth: 0.36; 
-        height: 1.79; 
-        width: 0.48" 
+          height: 1.79; 
+          width: 0.48" 
         material="color: #91511d">
       </a-box>
 
@@ -174,8 +195,8 @@
         position="-1 -4 0.02544" 
         rotation="0.09 0 0" 
         geometry="depth: 0.12; 
-        height: 0.33; 
-        width: 1.5" 
+          height: 0.33; 
+          width: 1.5" 
         material="color: #91511d">
       </a-box>
 
@@ -185,19 +206,19 @@
         position="-1 -3.976 -2" 
         rotation="0.09 0 0" 
         geometry="depth: 0.12; 
-        height: 0.33; 
-        width: 1.5" 
+          height: 0.33; 
+          width: 1.5" 
         material="color: #91511d">
       </a-box>
 
-      <!-- Stool beam back-->
+      <!-- Stool beam back -->
       <a-box 
         id="SStool Support back"
         position="-0.22 -4 -1.134" 
         rotation="0.1 89.95 0" 
         geometry="depth: 0.12; 
-        height: 0.33; 
-        width: 2.11" 
+          height: 0.33; 
+          width: 2.11" 
         material="color: #91511d">
       </a-box>
 
@@ -207,14 +228,45 @@
         position="-1.85149 -4.00042 -1.134" 
         rotation="0.1 89.95 0" 
         geometry="depth: 0.12; 
-        height: 0.33; 
-        width: 2.11" 
+          height: 0.33; 
+          width: 2.11" 
         material="color: #91511d">
       </a-box>
 
+      <!-- Monstera Plant 1 -->
+      <a-entity 
+        gltf-model="assets/models/scene.gltf" 
+        position="2.064 -7.21662 -3.574" 
+        scale="6 6 6">
+      </a-entity>
+
+      <!-- Monstera Plant 2 -->
+      <a-entity 
+        gltf-model="assets/models/scene.gltf" 
+        position="3.308 -7.40593 -3.823" 
+        scale="6 6 6" 
+        rotation="0 90 15">
+      </a-entity>
+
+      <!-- Monstera Plant 3 -->
+      <a-entity 
+        gltf-model="assets/models/monstera.gltf" 
+        position="-1.635 -7.694 -2.500" 
+        scale="6 6 6">
+      </a-entity>  
+
       <!-- Camera setup for two-point perspective -->
-      <a-camera position="7.07487 -2.70537 7.10709" rotation="-0.458366236104662 37.92980603766054 0" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera=""></a-camera>
+      <a-camera 
+        position="7.07487 -2.70537 7.10709" 
+        rotation="-0.458366236104662 37.92980603766054 0" 
+        camera="" 
+        look-controls="" 
+        wasd-controls="" 
+        data-aframe-inspector-original-camera="">
+      </a-camera>
       <div class="a-loader-title" style="display: none;">2-Point Perspective Room Cutaway</div>
-    </a-scene>
+        </a-scene>
+
+
   </body>
 </html>
