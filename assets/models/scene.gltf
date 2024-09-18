@@ -1,0 +1,435 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1404,
+      "max": [
+        74.66360473632813,
+        165.9356689453125,
+        60.32691955566406
+      ],
+      "min": [
+        -70.853515625,
+        52.456119537353516,
+        -52.815948486328125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 16848,
+      "componentType": 5126,
+      "count": 1404,
+      "max": [
+        0.9276500344276428,
+        0.9993448853492737,
+        0.9026702046394348
+      ],
+      "min": [
+        -0.9100649952888489,
+        -0.9993452429771423,
+        -0.8832910656929016
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1404,
+      "max": [
+        0.9996123313903809,
+        0.801455020904541,
+        0.999770998954773,
+        1.0
+      ],
+      "min": [
+        -0.9972382187843323,
+        -0.8707181811332703,
+        -0.999954879283905,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1404,
+      "max": [
+        1.0,
+        0.9289385080337524
+      ],
+      "min": [
+        0.0,
+        1.0959411156363785e-10
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11232,
+      "componentType": 5126,
+      "count": 1404,
+      "max": [
+        1.0,
+        0.9289385080337524
+      ],
+      "min": [
+        0.0,
+        1.0959411156363785e-10
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 5184,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 33696,
+      "componentType": 5126,
+      "count": 4948,
+      "max": [
+        45.072479248046875,
+        160.1573486328125,
+        37.26324462890625
+      ],
+      "min": [
+        -38.2623291015625,
+        0.0,
+        -32.077239990234375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 93072,
+      "componentType": 5126,
+      "count": 4948,
+      "max": [
+        0.9999997019767761,
+        1.0,
+        0.9999940991401672
+      ],
+      "min": [
+        -0.9999948143959045,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 22464,
+      "componentType": 5126,
+      "count": 4948,
+      "max": [
+        0.9999999403953552,
+        0.9981240034103394,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999984502792358,
+        -0.996673583984375,
+        -0.9999998807907104,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 22464,
+      "componentType": 5126,
+      "count": 4948,
+      "max": [
+        0.9988099336624146,
+        1.0
+      ],
+      "min": [
+        0.0,
+        6.886142386018125e-15
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 20736,
+      "componentType": 5125,
+      "count": 24912,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Nomeda Repsaite (https://sketchfab.com/NomedaRepsaite)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/monstera-plant-650a22c3fbda469aa4f70b4447d02c56",
+      "title": "Monstera plant"
+    },
+    "generator": "Sketchfab-16.29.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 120384,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 62048,
+      "byteOffset": 120384,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 152448,
+      "byteOffset": 182432,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 101632,
+      "byteOffset": 334880,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 436512,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Monstera_Leafs1_baseColor.png"
+    },
+    {
+      "uri": "textures/Monstera_Leafs1_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Monstera_Leafs1_normal.png"
+    },
+    {
+      "uri": "textures/Monstera_Plant_LowerPart_baseColor.png"
+    },
+    {
+      "uri": "textures/Monstera_Plant_LowerPart_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Monstera_Plant_LowerPart_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Monstera_Leafs1",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Monstera_Plant_LowerPart",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Monstera_Plant_GEO_Monstera_Leafs1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Monstera_Plant_GEO_Monstera_Plant_LowerPart_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 10,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "528e1e06829746a1b4df13b6080a447c.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Monstera_Plant_GEO"
+    },
+    {
+      "mesh": 0,
+      "name": "Monstera_Plant_GEO_Monstera_Leafs1_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Monstera_Plant_GEO_Monstera_Plant_LowerPart_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}
